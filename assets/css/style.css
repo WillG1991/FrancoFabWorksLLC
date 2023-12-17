@@ -114,6 +114,23 @@ h6 {
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
+
+@media (max-width: 450px) {
+  #topbar {
+      font-size: 12px; /* Adjust the font size as needed */
+  }
+
+  #topbar .contact-info a {
+      font-size: 12px; /* Adjust the font size as needed */
+  }
+
+  #topbar .contact-info i {
+      /* Adjust icon size - this might depend on how your icons are implemented */
+      font-size: 12px; /* Adjust the icon size as needed */
+  }
+}
+
+
 #topbar {
   background: #191919;
   font-size: 15px;
@@ -1451,3 +1468,4 @@ section {
     margin: -20px 0 30px 0;
   }
 }
+
