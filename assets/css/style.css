@@ -450,7 +450,7 @@ h6 {
   top: 0;
   left: 0;
   z-index: -1; /* Place the video behind other content */
-  filter: brightness(0.7); /* Apply darkness effect (adjust as needed) */
+  filter: brightness(0.35); /* Apply darkness effect (adjust as needed) */
 }
 
 .container {
