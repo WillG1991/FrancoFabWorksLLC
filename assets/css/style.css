@@ -526,13 +526,6 @@ h6 {
     text-align: center;
   }
 
-  #hero-video, #hero-gif {
-    filter: brightness(0.5);
-    width: auto;
-    max-width: 101%;
-    right: 400px;
-  }
-
   #hero .container {
     padding-top: 40px;
   }
