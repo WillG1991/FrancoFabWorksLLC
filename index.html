@@ -83,7 +83,6 @@
       Your browser does not support the video tag.
   </video>
   <img id="hero-gif" src="assets/img/portfolio/heroImage.gif" style="display:none;" alt="Hero Image">
-  
   <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
       <h1>FabWorks</h1>
       <h2>Welding and Fabrication</h2>
@@ -455,27 +454,28 @@
       class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
 
-  <!-- Custom Script for Video/Gif Toggle -->
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var heroVideo = document.getElementById('hero-video');
-    var heroGif = document.getElementById('hero-gif');
+
+  <!--  Change hero from .mp4 to .gif for mobile  -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var heroVideo = document.getElementById('hero-video');
+      var heroGif = document.getElementById('hero-gif');
+    
+      function toggleMedia() {
+          if (window.innerWidth <= 768) {
+              heroVideo.style.display = 'none';
+              heroGif.style.display = 'block';
+          } else {
+              heroVideo.style.display = 'block';
+              heroGif.style.display = 'none';
+          }
+      }
+    
+      toggleMedia();
+      window.addEventListener('resize', toggleMedia);
+    });
+    </script>
   
-    function checkScreenSize() {
-        if (window.innerWidth < 768) {
-            heroVideo.style.display = 'none';
-            heroGif.style.display = 'block';
-        } else {
-            heroVideo.style.display = 'block';
-            heroGif.style.display = 'none';
-        }
-    }
-  
-    // Check on load and on window resize
-    checkScreenSize();
-    window.onresize = checkScreenSize;
-  });
-  </script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
