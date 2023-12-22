@@ -527,12 +527,10 @@ h6 {
   }
 
   #hero-video, #hero-gif {
-    filter: brightness(0.5); /* Increase brightness for mobile */
-    object-fit: contain; /* Change to contain to prevent zooming too much */
-    width: auto; /* Adjust width if needed */
-    height: auto; /* Adjust height if needed */
-    max-width: 100%; /* Ensure it does not exceed the width of the container */
-    max-height: 100%; /* Ensure it does not exceed the height of the container */
+    filter: brightness(0.5);
+    width: auto;
+    max-width: 101%;
+    right: 400px;
   }
 
   #hero .container {
