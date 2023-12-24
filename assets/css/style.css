@@ -631,6 +631,14 @@ section {
   margin-bottom: 0;
 }
 
+/* Moves the phone number to column when on mobile as to match the email below it */
+@media (max-width: 400px) {
+  .about-me .phone-number {
+      display: block; /* This will make the phone number display on a new line */
+      margin-top: 5px; /* Optional: Adds some space above the phone number */
+  }
+}
+
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
