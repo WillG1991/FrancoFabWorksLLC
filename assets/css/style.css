@@ -793,9 +793,23 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/portfolio/expertiseImage.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/portfolio/expertiseImage.jpg") center center;
   background-size: cover;
   padding: 120px 0;
+}
+
+/* Fixed background for larger screens */
+@media (min-width: 769px) {
+  .cta {
+    background-attachment: fixed;
+  }
+}
+
+/* Mobile devices: Background scrolls with the content */
+@media (max-width: 768px) {
+  .cta {
+    background-attachment: scroll;
+  }
 }
 
 .cta h3 {
