@@ -797,6 +797,16 @@ section {
   color: #fff;
 }
 
+
+/* hover background for mobile when scrolling */
+.services .icon-box.active {
+  background: #cc1616; /* your hover background */
+}
+
+.services .icon-box.active .icon {
+  background: #fff; /* your hover icon background */
+}
+
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
