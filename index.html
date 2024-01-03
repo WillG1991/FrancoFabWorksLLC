@@ -24,6 +24,12 @@
   <link href="assets/img/logo.ico" rel="icon" type="image/x-icon">
   <link href="assets/img/hero-pg.png" rel="apple-touch-icon">
 
+<!-- Include the AOS CSS file -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- Include the AOS JavaScript file -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
   <!-- Structured Data -->
   <script type="application/ld+json">
     {
@@ -119,6 +125,9 @@
 </head>
 
 <body>
+
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center">
@@ -234,67 +243,62 @@
       </div>
     </section>
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-        <div class="section-title">
-          <span>Services</span>
-          <h2>Services</h2>
-          <p>We specialize in mobile welding for stainless & carbon steels:</p>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
-            style="display: flex; flex-direction: column;">
-            <div class="icon-box" style="flex-grow: 1; display: flex; flex-direction: column;">
-              <div class="icon"><i class="bx bx-home"></i></div>
-              <h4><a>Custom Fabrication</a></h4>
-              <p>Create unique metal structures to fit all your needs.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150"
-            style="display: flex; flex-direction: column;">
-            <div class="icon-box" style="flex-grow: 1; display: flex; flex-direction: column;">
-              <div class="icon"><i class="bx bx-car"></i></div>
-              <h4><a>Trailer Repairs</a></h4>
-              <p>Ensure trailers are maintained, safe and roadworthy.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300"
-            style="display: flex; flex-direction: column;">
-            <div class="icon-box" style="flex-grow: 1; display: flex; flex-direction: column;">
-              <div class="icon"><i class="bx bx-fridge"></i></div>
-              <h4><a>Commercial Kitchen Stainless Repair</a></h4>
-              <p>Maintain hygienic and durable kitchen equipment.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
-            style="display: flex; flex-direction: column;">
-            <div class="icon-box" style="flex-grow: 1; display: flex; flex-direction: column;">
-              <div class="icon"><i class="bx bx-chair"></i></div>
-              <h4><a>Furniture Repair</a></h4>
-              <p>Revitalize metal furniture for home or commercial use.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
-            style="display: flex; flex-direction: column;">
-            <div class="icon-box" style="flex-grow: 1; display: flex; flex-direction: column;">
-              <div class="icon"><i class="bx bx-wrench"></i></div>
-              <h4><a>Construction Equipment Repair</a></h4>
-              <p>Expert repairs to keep your equipment running smoothly.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
-            style="display: flex; flex-direction: column;">
-            <div class="icon-box" style="flex-grow: 1; display: flex; flex-direction: column;">
-              <div class="icon"><i class="bx bx-star"></i></div>
-              <h4><a>See Something Not Listed?</a></h4>
-              <p>Don't see what you need? Reach out and let's discuss how we can help!</p>
-            </div>
-          </div>
+<!-- ======= Services Section ======= -->
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-title">
+      <span>Services</span>
+      <h2>Services</h2>
+      <p>We specialize in mobile welding for stainless & carbon steels:</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+        <div class="icon-box hover-effect" style="flex-grow: 1; display: flex; flex-direction: column;">
+          <div class="icon"><i class="bx bx-home"></i></div>
+          <h4><a>Custom Fabrication</a></h4>
+          <p>Create unique metal structures to fit all your needs.</p>
         </div>
       </div>
-    </section>
-    <!-- End Services Section -->
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
+        <div class="icon-box hover-effect" style="flex-grow: 1; display: flex; flex-direction: column;">
+          <div class="icon"><i class="bx bx-car"></i></div>
+          <h4><a>Trailer Repairs</a></h4>
+          <p>Ensure trailers are maintained, safe and roadworthy.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon-box hover-effect" style="flex-grow: 1; display: flex; flex-direction: column;">
+          <div class="icon"><i class="bx bx-fridge"></i></div>
+          <h4><a>Commercial Kitchen Stainless Repair</a></h4>
+          <p>Maintain hygienic and durable kitchen equipment.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+        <div class="icon-box hover-effect" style="flex-grow: 1; display: flex; flex-direction: column;">
+          <div class="icon"><i class="bx bx-chair"></i></div>
+          <h4><a>Furniture Repair</a></h4>
+          <p>Revitalize metal furniture for home or commercial use.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+        <div class="icon-box hover-effect" style="flex-grow: 1; display: flex; flex-direction: column;">
+          <div class="icon"><i class="bx bx-wrench"></i></div>
+          <h4><a>Construction Equipment Repair</a></h4>
+          <p>Expert repairs to keep your equipment running smoothly.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+        <div class="icon-box hover-effect" style="flex-grow: 1; display: flex; flex-direction: column;">
+          <div class="icon"><i class="bx bx-star"></i></div>
+          <h4><a>See Something Not Listed?</a></h4>
+          <p>Don't see what you need? Reach out and let's discuss how we can help!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Services Section -->
+
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
@@ -577,6 +581,37 @@
         });
     });
   </script>
+
+
+<script>
+  $(document).ready(function () {
+    // Function to check if an element is in the viewport
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    // Function to add the "scrolled" class to icon-box elements when they are in the viewport
+    function addScrolledClass() {
+      var iconBoxes = document.querySelectorAll(".icon-box");
+      iconBoxes.forEach(function (box) {
+        if (isElementInViewport(box)) {
+          box.classList.add("scrolled");
+        }
+      });
+    }
+
+    // Call the addScrolledClass function initially and on scroll
+    addScrolledClass();
+    window.addEventListener("scroll", addScrolledClass);
+  });
+</script>
 
 
 

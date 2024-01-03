@@ -591,6 +591,7 @@ section {
   margin-bottom: 0;
   position: relative;
   z-index: 2;
+  color: black;
 }
 
 @media (max-width: 575px) {
@@ -772,6 +773,7 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  color: black
 }
 
 .services .icon-box:hover {
@@ -796,6 +798,8 @@ section {
 .services .icon-box:hover p {
   color: #fff;
 }
+
+
 
 
 
